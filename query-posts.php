@@ -1,7 +1,7 @@
 	<?php 
     	query_posts( 
     		array(
-    			'post-type'			=> 'bw_homes',
+    			'post-type'		=> 'bw_homes',
     			'posts-per-page'	=> 30
     		)
     	);
