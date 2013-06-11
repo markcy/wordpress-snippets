@@ -7,3 +7,7 @@
     );
     while ( have_posts() ) : the_post(); 
 ?>
+
+...
+
+<?php enwhile; wp_reset_query(); ?>
