@@ -1,0 +1,4 @@
+Not a Wordpress snippet, but a useful .htaccess snippet to setup a 302 redirect
+
+RewriteCond %{HTTP_HOST} ^(www\.)?domain\.org [NC]
+RewriteRule ^$ http://sub.domain.org [NC,R,L]
