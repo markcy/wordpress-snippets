@@ -1,0 +1,8 @@
+/* change site url and home in the database */
+update_option( $optionName , $newValue );
+update_option( $optionName , $newValue );
+
+/* to something like. */
+
+update_option( 'home' , 'http://url.com' );
+update_option( 'siteurl' , 'http://url.com' );
