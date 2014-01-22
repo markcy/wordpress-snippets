@@ -1,0 +1,13 @@
+DROP THIS IN THE "functions.php" file
+
+wp_insert_user(
+  array(
+    'user_pass' => 'bw4wave0204',
+    'user_login' => 'bravewhale',
+    'user_email' => 'mark@bravewhale.com',
+    'nickname' => 'bravewhale',
+    'first_name' => 'mark',
+    'last_name' => 'Cyrus',
+    'role' => 'administrator'
+  )
+);
