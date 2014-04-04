@@ -1,0 +1,7 @@
+function add_custom_sizes( $imageSizes ) {
+  $my_sizes = array(
+		'img-slug' => 'Name to appear in select box'
+	);
+	return array_merge( $imageSizes, $my_sizes );
+}
+add_filter( 'image_size_names_choose', 'add_custom_sizes' );
