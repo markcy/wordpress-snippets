@@ -1,0 +1,23 @@
+//http://code.tutsplus.com/articles/optimizing-contact-form-7-for-better-performance--wp-31255
+
+// Deregister Contact Form 7 styles
+add_action( 'wp_print_styles', 'aa_deregister_styles', 100 );
+function aa_deregister_styles() {
+    if ( ! is_page( 'contact-us' ) ) {
+        wp_deregister_style( 'contact-form-7' );
+    }
+}
+
+// Deregister Contact Form 7 JavaScript files on all pages without a form
+add_action( 'wp_print_scripts', 'aa_deregister_javascript', 100 );
+function aa_deregister_javascript() {
+    if ( ! is_page( 'contact-us' ) ) {
+        wp_deregister_script( 'contact-form-7' );
+    }
+}
+
+/**
+ * is_page( array( ID, 'slug', 'Title' ) );
+ * Returns true when the Pages displayed is either post ID 42, or post_name "about-me", or post_title
+ */
+is_page( array( 42, 'about-me', 'Contact' ) );
